@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Inconsolata", serif;
+    background-color: #1b1b1b;
+    color:#FBFBFF;
+}
+.nav-bar {
+    position: absolute;  /* Make it float above the hero */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Full width */
+    z-index: 1000; /* Ensure it's above other elements */
+    padding: 20px 0;
+    background: transparent; /* Transparent background */
+}
+
+
+.nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.nav-bar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    font-weight: 600;
+    transition: color 0.3s;
+    color:#FBFBFF;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-bar ul li a:hover{
+    color: #ED6217;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    box-shadow: 18px 16px 36px 1px rgba(0,0,0,0.75);
+
+}
+.hero-text{
+    z-index: 2;
+    font-size: 1.5rem;
+    background-color:#131112;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 22%;
+    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+    
+}
+.hero-text h1,h3{
+    margin-left: -50px;
+    margin-bottom: 1rem;
+}
+.hero-button{
+    font-family: "Inconsolata", serif;
+    padding:10px 20px;
+    margin-left: -50px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    color: #FBFBFF;
+    background-color: #ED6217;
+    transition: background-color 0.5s;
+}
+.hero-button:hover{
+    background-color: #a1400c;
+}
+
+.color-text{
+    color: #ED6217;
+}
+
+.hero img{
+    z-index: -20;
+    margin-left: -50%;
+    z-index: -11;
+    width: 50%;
+    object-fit: cover;
+    
+}
+
+
+
+
+.second-section{
+    opacity: 0;
+    transform: translateY(50px);
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline:10%;
+    gap: 30px;
+    transition: opacity 1s ease, transform 1s ease; 
+    
+}
+
+.second-section.visible{
+    opacity:1;
+    transform: translateY(0);
+
+}
+
+.second-text{
+    margin-inline: 5%;
+}
+
+.second-text h1{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #ED6217;
+}
+
+.second-text p{
+    font-size: 1.1rem;
+    line-height: 1.8 ;
+    text-indent: 30px;
+}
+
+.section-button{
+    margin-top: 30px;
+    font-family: "Inconsolata", serif;
+    padding:10px 20px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    color: #FBFBFF;
+    background-color: #ED6217;
+    transition: background-color 0.5s;
+}
+.section-button:hover{
+    background-color: #a1400c;
+    
+}
+
+
+
+
+.second-section img{
+    width: 35%;
+    margin-left: 5%;
+    box-shadow: 20px 23px 0px -1px #ED6217;
+}
+
+.skills-section{
+    background-color: #131112;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-inline: 10rem;
+    display: flex;
+    flex-direction: column;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+
+
+
+}
+.prog-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.prog-icons{
+    display: grid;
+
+    
+}
+
+.icon-group1{
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+.icon-group2{
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+.icon-group3{
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.icon-group4{
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.prog-skills-text{
+    padding-inline: 10rem;
+}
+.prog-skills-text h1{
+    color: #ED6217;
+    margin-bottom: 20px;
+}
+.prog-skills-text p{
+    
+    font-size: 1.1rem;
+    line-height: 1.8 ;
+    text-indent: 30px;
+}
+
+
+.lang-skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.lang-skills-text{
+    padding-inline: 10rem;
+}
+.lang-skills-text h1{
+    color: #ED6217;
+    margin-bottom: 20px;
+}
+.lang-skills-text p{
+    font-size: 1.1rem;
+    line-height: 1.8 ;
+    text-indent: 30px;
+    padding-right: 15rem;
+}
+
+.lang-icons{
+    display: grid;
+
+    
+}
+.icon-group5{
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
