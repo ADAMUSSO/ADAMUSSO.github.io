@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Svitek | Portfolio</title>
+    <link rel="stylesheet" href="../styles/secondstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">AS<span class="color-text">.</span></div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About me</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li> 
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <div class="hero-text">
+            <h1>Hi, I am <br> <span class="color-text">Adam Svitek</span> </h1>
+            <h3>I am a <span class="typewriter" id="typewriter-text"></span><span class="cursor">|</span></h3>
+            <div class="hero-cta">
+                <a href="#contact"><button class="hero-button">Contact Me</button></a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="../images/me.jpg" alt="Adam Svitek">
+        </div>
+    </div>
+
+    <div class="second-section reveal" id="about">
+        <div class="img-wrapper">
+            <img src="../images/me.jpg" alt="About me">
+        </div>
+        <div class="second-text">
+            <h1 class="section-title">About me</h1>
+            <p>Hi! My name is Adam, and I’m a student at an IT school, where I’m learning programming and software development. I have experience with multiple programming languages and love exploring new technologies. Besides coding, I’m passionate about photography, FPV drones, and creative programming projects.</p>
+            <button class="section-button">Download CV</button>    
+        </div>
+    </div>
+
+    <div class="skills-section reveal" id="skills">
+        <div class="prog-skills">
+            <div class="prog-skills-text">
+                <h1 class="section-title">Programming Skills</h1>
+                <p>I am passionate about programming and technology. My skills include software development, networking, and artificial intelligence.</p> 
+            </div>
+            
+            <div class="prog-icons">
+                <div class="icon-card" style="transition-delay: 100ms">
+                    <img src="../images/python.png" alt="python">
+                    <p>Intermediate</p>
+                </div>
+                <div class="icon-card" style="transition-delay: 200ms">
+                    <img src="../images/c.png" alt="c">
+                    <p>Intermediate</p>
+                </div>
+                <div class="icon-card" style="transition-delay: 300ms">
+                    <img src="../images/cpp.png" alt="cpp">
+                    <p>Beginner</p>
+                </div>
+                <div class="icon-card" style="transition-delay: 400ms">
+                    <img src="../images/java2.png" alt="java">
+                    <p>Beginner</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lang-skills">
+            <div class="lang-skills-text">
+                <h1 class="section-title">Language skills</h1>
+                <p>Since I come from Slovakia I speak fluently in Slovak language. I also have certificate in English language in C1 category.</p>
+            </div>
+            <div class="lang-icons">
+                <div class="icon-card">
+                    <img src="../images/united-kingdom.png" alt="eng">
+                    <p>C1 Certificate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-grid">
+    <div class="project-card">
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2070&auto=format&fit=crop" alt="Blockchain"> 
+        </div>
+        <div class="card-content">
+            <h2>Blockchain Interoperability</h2>
+            <p>Research and implementation of interoperability protocols between heterogeneous and homogenous blockchain networks.</p>
+            <div class="card-tags">
+                <span>TypeScript</span>
+                <span>Blockchain</span>
+            </div>
+            <a href="https://github.com/ADAMUSSO/INTEROPERABILITY_V2" target="_blank">
+                <button class="project-button">View Code</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Data Analysis">
+        </div>
+        <div class="card-content">
+            <h2>Intelligent Data Analysis</h2>
+            <p>Comprehensive data analysis pipeline including preprocessing, visualization, and training machine learning models.</p>
+            <div class="card-tags">
+                <span>Python</span>
+                <span>Data Science</span>
+                <span>Pandas</span>
+            </div>
+            <a href="https://github.com/ADAMUSSO/IAU" target="_blank">
+                <button class="project-button">View Code</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1558494949-ef526b0042a0?q=80&w=2070&auto=format&fit=crop" alt="Networking">
+        </div>
+        <div class="card-content">
+            <h2>Network Communication</h2>
+            <p>Implementation of custom network communication protocols, packet sniffing, and analysis tools using raw sockets.</p>
+            <div class="card-tags">
+                <span>Python</span>
+                <span>Networking</span>
+            </div>
+            <a href="https://github.com/ADAMUSSO/PKS" target="_blank">
+                <button class="project-button">View Code</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=2070&auto=format&fit=crop" alt="Algorithms">
+        </div>
+        <div class="card-content">
+            <h2>Algorithm Complexity</h2>
+            <p>Advanced analysis of algorithmic complexity, implementation of sorting algorithms, and graph theory problems.</p>
+            <div class="card-tags">
+                <span>C++</span>
+                <span>Algorithms</span>
+            </div>
+            <a href="https://github.com/ADAMUSSO/AZA" target="_blank">
+                <button class="project-button">View Code</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=2021&auto=format&fit=crop" alt="Database">
+        </div>
+        <div class="card-content">
+            <h2>Database Game Logic</h2>
+            <p>A complex game logic system implemented entirely on the backend using PLpgSQL procedures and database triggers.</p>
+            <div class="card-tags">
+                <span>PLpgSQL</span>
+                <span>PostgreSQL</span>
+            </div>
+            <a href="https://github.com/ADAMUSSO/DBS" target="_blank">
+                <button class="project-button">View Code</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop" alt="AI">
+        </div>
+        <div class="card-content">
+            <h2>Artificial Intelligence</h2>
+            <p>Implementation of state-space search algorithms, heuristics, and neural network fundamentals.</p>
+            <div class="card-tags">
+                <span>Python</span>
+                <span>AI</span>
+            </div>
+            <a href="https://github.com/ADAMUSSO/UI" target="_blank">
+                <button class="project-button">View Code</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h1>Let's work together</h1>
+            <p>Have a project in mind? Send me a message!</p>
+            <a href="mailto:svitekadam1@gmail.com" class="email-link">svitekadam1@gmail.com</a>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">© 2024 Adam Svitek. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../javascripts/script.js"></script>
+</body>
+</html>
